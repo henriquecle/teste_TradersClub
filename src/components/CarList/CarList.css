@@ -1,0 +1,71 @@
+.CarList {
+  margin: 50px 50px;
+  color: #ffffff;
+}
+
+.CarList .Car:first-child {
+  border-top: 0;
+}
+
+.CarList .Car {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 2px solid rgba(62, 76, 94, 0.6);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.CarList .Car:hover {
+  background-color: #37435499;
+}
+
+.CarList .Car .Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px;
+}
+
+.CarList .Car .Info .FirstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.CarList .Car .Info .SecondLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.CarList .NoCar {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.SearchError {
+  margin: 30px 80px;
+  font-size: 18px;
+  color: #ffffff;
+}

@@ -1,0 +1,152 @@
+.Register {
+  padding: 16px 50px;
+  color: #ffffff;
+  position: relative;
+  
+  .Header {
+    width: 240px;
+    padding-left: 10px;
+    height: 40px;
+    margin: 10px 0;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .Form {
+    padding: 0 30px;
+    display: grid;
+    grid-template-areas: "title title" "model year" "brand brand" "color price" "km .";
+    grid-auto-rows: 40px;
+    grid-gap: 40px;
+    
+    input {
+      padding-left: 10px;
+      background-color: transparent;
+      color: #ffffff; 
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #8d8f92;
+      font-size: 18px;
+
+      &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+      }
+
+      &::placeholder {
+        color: #999fa8;
+      }
+
+      &:focus {
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+
+    .Title {
+      grid-area: title;
+    }
+
+    .Model {
+      grid-area: model;
+    }
+
+    .Year {
+      grid-area: year;
+    }
+
+    .Color {
+      grid-area: color;
+    }
+
+    .Price {
+      grid-area: price;
+    }
+
+    .Km {
+      grid-area: km;
+    }
+  }
+
+  %button {
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .Buttons {
+    padding: 30px 30px 0 30px;
+    display: flex;
+
+    .LeftButtons {
+      flex: 1;
+      display: flex;
+      
+      .DeleteButton {
+        @extend %button;
+        flex-basis: 100px;
+        margin-right: 8px;
+        background-color: transparent;
+        color: #ffffff;
+        
+        &:hover {
+          background-color: #000f2299;
+          color: #ffffff;
+        }
+      }
+      
+      .CancelButton {
+        @extend %button;
+        flex-basis: 100px;
+        background-color: transparent;
+        color: #ffffff;
+        
+        &:hover {
+          background-color: #000f2299;
+          color: #ffffff;
+        }
+      }
+    }
+    
+    .SaveButton {
+      @extend %button;
+      flex-basis: 80px;
+      background-color: #ffffff;
+      color: #000000;
+
+      &:hover {
+        background-color: #1a2533;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .OverlayContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000b3;
+    
+    .Message {
+      margin: 15% 20px 20px;
+      font-size: 22px;
+      text-align: center;
+    }
+    
+    .OkButton {
+      @extend %button;
+      width: 60px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+
+}

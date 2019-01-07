@@ -1,0 +1,111 @@
+.Brand {
+  grid-area: brand;
+}
+
+.Brand .Header-FormFieldOpen, .Brand .Header-FormFieldClosed {
+  padding-left: 10px;
+  height: 36px;
+  background-color: #1f2d40;
+  border: 1px solid #8d8f92;
+  color: #8f8f8f;
+  font-size: 16px;
+}
+
+.Brand .Header-FormFieldOpen .SelectedOption, .Brand .Header-FormFieldClosed .SelectedOption {
+  line-height: 35px;
+}
+
+.Brand .Header-FormFieldOpen .SelectedOption span, .Brand .Header-FormFieldClosed .SelectedOption span {
+  padding-right: 5px;
+  height: 36px;
+  float: right;
+  color: #a7a7a7;
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Brand .Header-FormFieldOpen .SelectedOption span .TopTriangle, .Brand .Header-FormFieldClosed .SelectedOption span .TopTriangle {
+  -ms-flex-preferred-size: 18px;
+      flex-basis: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Brand .Header-FormFieldOpen .SelectedOption span .TopTriangle div, .Brand .Header-FormFieldClosed .SelectedOption span .TopTriangle div {
+  height: 8px;
+  line-height: 8px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.Brand .Header-FormFieldOpen .SelectedOption span .BottomTriangle, .Brand .Header-FormFieldClosed .SelectedOption span .BottomTriangle {
+  -ms-flex-preferred-size: 18px;
+      flex-basis: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Brand .Header-FormFieldOpen .SelectedOption span .BottomTriangle div, .Brand .Header-FormFieldClosed .SelectedOption span .BottomTriangle div {
+  height: 8px;
+  line-height: 8px;
+}
+
+.Brand .Header-FormFieldOpen {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.Brand .Header-FormFieldClosed {
+  background-color: transparent;
+  border-radius: 5px;
+  -webkit-transition: 1s background-color, 0s 0.2s border;
+  transition: 1s background-color, 0s 0.2s border;
+}
+
+.Brand .OptionsContainer {
+  position: relative;
+}
+
+.Brand .OptionsContainer .Options {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Brand .OptionsContainer .Options .Option {
+  padding-left: 10px;
+  line-height: 30px;
+  cursor: pointer;
+  background-color: #1f2d40;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #999fa8;
+  font-size: 16px;
+}
+
+.Brand .OptionsContainer .Options .Option:hover {
+  background-color: #374354;
+}

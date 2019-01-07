@@ -1,0 +1,92 @@
+.Brand {
+  grid-area: brand;
+
+  %header {
+    padding-left: 10px;
+    height: 36px;
+    background-color: #1f2d40;
+    border: 1px solid #8d8f92;
+    color: #8f8f8f;
+    font-size: 16px;
+    
+    .SelectedOption {
+      line-height: 35px;
+      
+      span {
+        padding-right: 5px;
+        height: 36px;
+        float: right;
+        color: #a7a7a7;
+        font-size: 20px;
+        font-weight: 400;
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .TopTriangle {
+          flex-basis: 18px;
+          display: flex;
+          
+          div {
+            height: 8px;
+            line-height: 8px;
+            align-self: flex-end;
+          }
+        }
+        
+        .BottomTriangle {
+          flex-basis: 18px;
+          display: flex;
+          
+          div {
+            height: 8px;
+            line-height: 8px;
+          }
+        }
+      }
+    }
+  }
+  
+  .Header-FormFieldOpen {
+    border: 1px solid #ffffff;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    @extend %header;
+  }
+
+  .Header-FormFieldClosed {
+    @extend %header;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 1s background-color, 0s 0.2s border;
+  }
+
+  .OptionsContainer {
+    position: relative;
+
+    .Options {
+      width: 100%;
+      box-sizing: border-box;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 0 0 5px 5px;
+      transition: 0.3s;
+      
+      .Option {
+        padding-left: 10px;
+        line-height: 30px;
+        cursor: pointer;
+        background-color: #1f2d40;
+        transition: 0.1s;
+        color: #999fa8;
+        font-size: 16px;
+    
+        &:hover {
+          background-color: #374354;
+        }
+      }
+    }
+  }
+}

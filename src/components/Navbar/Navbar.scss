@@ -1,0 +1,49 @@
+.Navbar {
+  flex-basis: 100px;
+  flex-shrink: 0;
+  padding: 0 40px 0 80px; 
+  background-color: #1a2533;
+  display: flex;
+  align-items: center;
+
+  input {
+    flex: 1;
+    height: 40px;
+    margin-right: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #8d8f92;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 18px;
+
+    &:focus {
+      border: 1px solid #ffffff;
+    }
+
+    &::placeholder {
+      color: #999fa8;
+    }
+  }
+  
+  .RegisterButton {
+    flex-basis: 120px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    user-select: none;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #1a2533;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,185 @@
+.Register {
+  padding: 16px 50px;
+  color: #ffffff;
+  position: relative;
+}
+
+.Register .Header {
+  width: 240px;
+  padding-left: 10px;
+  height: 40px;
+  margin: 10px 0;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.Register .Form {
+  padding: 0 30px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "title title" "model year" "brand brand" "color price" "km .";
+  grid-auto-rows: 40px;
+  grid-gap: 40px;
+}
+
+.Register .Form input {
+  padding-left: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #8d8f92;
+  font-size: 18px;
+}
+
+.Register .Form input::-webkit-inner-spin-button, .Register .Form input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.Register .Form input::-webkit-input-placeholder {
+  color: #999fa8;
+}
+
+.Register .Form input:-ms-input-placeholder {
+  color: #999fa8;
+}
+
+.Register .Form input::-ms-input-placeholder {
+  color: #999fa8;
+}
+
+.Register .Form input::placeholder {
+  color: #999fa8;
+}
+
+.Register .Form input:focus {
+  border-bottom: 1px solid #ffffff;
+}
+
+.Register .Form .Title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+}
+
+.Register .Form .Model {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: model;
+}
+
+.Register .Form .Year {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: year;
+}
+
+.Register .Form .Color {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: color;
+}
+
+.Register .Form .Price {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: price;
+}
+
+.Register .Form .Km {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: km;
+}
+
+.Register .Buttons .LeftButtons .DeleteButton, .Register .Buttons .LeftButtons .CancelButton, .Register .Buttons .SaveButton, .Register .OverlayContainer .OkButton {
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.Register .Buttons {
+  padding: 30px 30px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Register .Buttons .LeftButtons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Register .Buttons .LeftButtons .DeleteButton {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  margin-right: 8px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.Register .Buttons .LeftButtons .DeleteButton:hover {
+  background-color: #000f2299;
+  color: #ffffff;
+}
+
+.Register .Buttons .LeftButtons .CancelButton {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.Register .Buttons .LeftButtons .CancelButton:hover {
+  background-color: #000f2299;
+  color: #ffffff;
+}
+
+.Register .Buttons .SaveButton {
+  -ms-flex-preferred-size: 80px;
+      flex-basis: 80px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.Register .Buttons .SaveButton:hover {
+  background-color: #1a2533;
+  color: #ffffff;
+}
+
+.Register .OverlayContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000b3;
+}
+
+.Register .OverlayContainer .Message {
+  margin: 15% 20px 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.Register .OverlayContainer .OkButton {
+  width: 60px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
+}
